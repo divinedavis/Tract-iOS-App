@@ -10,4 +10,10 @@ import UIKit
 
 class Users: NSObject {
 
+    
+    
+    var Name : String = ""
+    
+    
+    
 }
