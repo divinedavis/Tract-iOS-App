@@ -13,6 +13,8 @@ class Search : UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,8 +29,6 @@ class Search : UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = "Shop Name"
         cell.detailTextLabel?.text = "Address"
         
-        
-        
         return cell
     
     }
@@ -36,6 +36,8 @@ class Search : UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
+    
     
 
 }

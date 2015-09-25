@@ -10,6 +10,9 @@ import UIKit
 
 class Mechanic: NSObject {
 
+    var mechanicLocation : String = ""
+    var mechanicName : String = ""
+    var mechanicStars : Int = 0
     
     
 }

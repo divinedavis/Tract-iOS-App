@@ -14,6 +14,7 @@ class Car: NSObject {
     var carYear : Int = 0
     var carModel : String = ""
     var tireSize : Int = 0
+    var carColor : String = ""
     
     
     

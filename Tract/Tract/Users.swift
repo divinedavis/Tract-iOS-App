@@ -12,7 +12,9 @@ class Users: NSObject {
 
     
     
-    var Name : String = ""
+    var userName : String = ""
+    var userLocation : String = ""
+    var userPoints : Int = 0
     
     
     
