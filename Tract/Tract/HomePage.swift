@@ -8,8 +8,15 @@
 
 import UIKit
 
-class Shops : UIViewController {
+class HomePage: UIViewController {
 
+    @IBOutlet weak var firstNameLabel: UITextField!
+    @IBOutlet weak var lastNameLabel: UITextField!
+    @IBOutlet weak var addressLabel: UITextField!
+    @IBOutlet weak var cityLabel: UITextField!
+    @IBOutlet weak var stateLabel: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     

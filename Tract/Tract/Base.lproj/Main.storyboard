@@ -7,7 +7,7 @@
         <!--Home Page-->
         <scene sceneID="r1Z-UY-LbH">
             <objects>
-                <viewController title="Home Page" id="HcD-kG-R5j" sceneMemberID="viewController">
+                <viewController title="Home Page" id="HcD-kG-R5j" customClass="HomePage" customModule="Tract" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UuW-kw-Ihk"/>
                         <viewControllerLayoutGuide type="bottom" id="BIJ-ox-72V"/>
@@ -41,11 +41,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zP-vN-I7f">
+                                <rect key="frame" x="85" y="261" width="205" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="F5O-bM-7mu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="oaV-qz-OAc" id="lzV-5Y-wOB"/>
+                        <outlet property="cityLabel" destination="eqQ-os-CgS" id="EWT-Fs-VXV"/>
+                        <outlet property="firstNameLabel" destination="kel-va-H5a" id="BeJ-5c-Z9j"/>
+                        <outlet property="lastNameLabel" destination="1zD-DP-npt" id="XYI-V3-jGz"/>
+                        <outlet property="stateLabel" destination="Ak5-je-BSk" id="h2q-A7-Ut6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wbc-8h-V2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
