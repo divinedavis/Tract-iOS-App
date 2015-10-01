@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164EF6C91BBDC48E00BC949E /* MechanicProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EF6C81BBDC48E00BC949E /* MechanicProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		16F725CF1BAE19500043B0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725CE1BAE19500043B0FB /* AppDelegate.swift */; };
 		16F725D11BAE19500043B0FB /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725D01BAE19500043B0FB /* Search.swift */; };
 		16F725D31BAE19500043B0FB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725D21BAE19500043B0FB /* HomePage.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		164EF6C81BBDC48E00BC949E /* MechanicProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MechanicProfileViewController.swift; sourceTree = "<group>"; };
 		16F725CB1BAE19500043B0FB /* Tract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tract.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F725CE1BAE19500043B0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F725D01BAE19500043B0FB /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				16F725CE1BAE19500043B0FB /* AppDelegate.swift */,
 				16F725D01BAE19500043B0FB /* Search.swift */,
 				16F725D21BAE19500043B0FB /* HomePage.swift */,
+				164EF6C81BBDC48E00BC949E /* MechanicProfileViewController.swift */,
 				16F726071BAE1F9C0043B0FB /* Car Information */,
 				16F726001BAE1EC90043B0FB /* Mechanics & Users */,
 				16F725D41BAE19500043B0FB /* Main.storyboard */,
@@ -287,6 +290,7 @@
 				16F725D31BAE19500043B0FB /* HomePage.swift in Sources */,
 				16F725FF1BAE1EB40043B0FB /* Mechanic.swift in Sources */,
 				16F726021BAE1F520043B0FB /* Users.swift in Sources */,
+				164EF6C91BBDC48E00BC949E /* MechanicProfileViewController.swift in Sources */,
 				16F725CF1BAE19500043B0FB /* AppDelegate.swift in Sources */,
 				16F725D11BAE19500043B0FB /* Search.swift in Sources */,
 				16F726061BAE1F8A0043B0FB /* Car.swift in Sources */,
