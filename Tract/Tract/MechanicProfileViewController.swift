@@ -8,12 +8,13 @@
 
 import UIKit
 
-class MechanicProfileViewController: UIViewController {
+class MechanicProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +22,23 @@ class MechanicProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+    {
+    //following lines needed only if you need to send some detail across to ContactViewController
+    if ([segue.identifier isEqualToString:@"SegueTestID"]) {
+    ContactViewController *destinationViewController = segue.destinationViewController;
+    destinationViewController.strTest = @"Check";
+    //where strTest is a variable in ContactViewController. i.e:
+    //"@property (nonatomic, strong) NSString *strTest;"
+    //declared in `ContactViewController.h`
     }
-    */
+    
+    //...
+    }
 
 }

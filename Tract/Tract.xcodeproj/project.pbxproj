@@ -56,7 +56,7 @@
 		16F725F21BAE19500043B0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F725FE1BAE1EB40043B0FB /* Mechanic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mechanic.swift; sourceTree = "<group>"; };
 		16F726011BAE1F520043B0FB /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
-		16F726051BAE1F8A0043B0FB /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		16F726051BAE1F8A0043B0FB /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = ../Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,6 @@
 				16F725D01BAE19500043B0FB /* Search.swift */,
 				16F725D21BAE19500043B0FB /* HomePage.swift */,
 				164EF6C81BBDC48E00BC949E /* MechanicProfileViewController.swift */,
-				16F726071BAE1F9C0043B0FB /* Car Information */,
 				16F726001BAE1EC90043B0FB /* Mechanics & Users */,
 				16F725D41BAE19500043B0FB /* Main.storyboard */,
 				16F725D71BAE19500043B0FB /* Assets.xcassets */,
@@ -144,17 +143,9 @@
 			children = (
 				16F725FE1BAE1EB40043B0FB /* Mechanic.swift */,
 				16F726011BAE1F520043B0FB /* Users.swift */,
-			);
-			name = "Mechanics & Users";
-			sourceTree = "<group>";
-		};
-		16F726071BAE1F9C0043B0FB /* Car Information */ = {
-			isa = PBXGroup;
-			children = (
 				16F726051BAE1F8A0043B0FB /* Car.swift */,
 			);
-			name = "Car Information";
-			path = ..;
+			name = "Mechanics & Users";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
