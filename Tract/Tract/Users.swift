@@ -12,9 +12,15 @@ class Users: NSObject {
 
     
     
-    var userName : String = ""
-    var userLocation : String = ""
-    var userPoints : Int = 0
+    var firstName : String = ""
+    var lastName : String = ""
+    var address : String = ""
+    var Points : Int = 0
+    var age : Int = 0
+    var city : String = ""
+    var state : String = ""
+    
+    
     
     
     

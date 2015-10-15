@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MechanicProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MechanicProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +22,7 @@ class MechanicProfileViewController: UIViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-    }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
     
     
     

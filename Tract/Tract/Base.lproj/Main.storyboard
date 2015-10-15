@@ -60,6 +60,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="addressLabel" destination="oaV-qz-OAc" id="lzV-5Y-wOB"/>
+                        <outlet property="ageLabel" destination="0zP-vN-I7f" id="mUy-2Y-1A5"/>
                         <outlet property="cityLabel" destination="eqQ-os-CgS" id="EWT-Fs-VXV"/>
                         <outlet property="firstNameLabel" destination="kel-va-H5a" id="BeJ-5c-Z9j"/>
                         <outlet property="lastNameLabel" destination="1zD-DP-npt" id="XYI-V3-jGz"/>
@@ -99,7 +100,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oT9-Cv-SDX">
@@ -107,7 +108,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>

@@ -15,17 +15,40 @@ class HomePage: UIViewController {
     @IBOutlet weak var addressLabel: UITextField!
     @IBOutlet weak var cityLabel: UITextField!
     @IBOutlet weak var stateLabel: UITextField!
+    @IBOutlet weak var ageLabel: UITextField!
+    
+    var user = Users()
+
+
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
+        let ageIntFromLabel : Int? = Int(ageLabel.text!)
+        ageLabel.keyboardType = UIKeyboardType.NumberPad
+        
+
+        
+        user.firstName = String(firstNameLabel)
+        user.lastName = String(lastNameLabel)
+        user.address = String(addressLabel)
+        user.city = String(cityLabel)
+        user.state = String(stateLabel)
+        user.age = ageIntFromLabel!
+        
+        
+
+        
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
 
 
 }

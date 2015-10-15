@@ -15,4 +15,5 @@ class Mechanic: NSObject {
     var mechanicStars : Int = 0
     
     
+    
 }
