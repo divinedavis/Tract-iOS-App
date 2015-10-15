@@ -19,19 +19,21 @@ class HomePage: UIViewController {
     
     
     var user = Users()
+    var car = Car()
+    
+    func getCarInfo(year : Int, make : String, model : String, tireSize : Int, color : String, body : String) {
+        
+        
+    }
+    
 
 
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         var ageIntFromLabel : Int? = Int(ageLabel.text!)
         ageLabel.keyboardType = UIKeyboardType.NumberPad
         
-
         
         user.firstName = String(firstNameLabel)
         user.lastName = String(lastNameLabel)
@@ -40,10 +42,14 @@ class HomePage: UIViewController {
         user.state = String(stateLabel)
         
         
+        
     }
     @IBAction func submitButton(sender: AnyObject) {
         
         print(user.firstName)
+        
+        getCarInfo(car.year, make: car.make, model: car.model, tireSize: car.tireSize, color: car.color, body: car.body)
+        
     }
     
 
