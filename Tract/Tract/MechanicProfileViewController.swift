@@ -22,23 +22,20 @@ class MechanicProfileViewController: UIViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
+    
     
     
 
     
     
-    - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-    {
-    //following lines needed only if you need to send some detail across to ContactViewController
-    if ([segue.identifier isEqualToString:@"SegueTestID"]) {
-    ContactViewController *destinationViewController = segue.destinationViewController;
-    destinationViewController.strTest = @"Check";
-    //where strTest is a variable in ContactViewController. i.e:
-    //"@property (nonatomic, strong) NSString *strTest;"
-    //declared in `ContactViewController.h`
-    }
-    
-    //...
-    }
-
+   
 }
