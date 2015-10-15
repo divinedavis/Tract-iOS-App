@@ -17,6 +17,7 @@ class HomePage: UIViewController {
     @IBOutlet weak var stateLabel: UITextField!
     @IBOutlet weak var ageLabel: UITextField!
     
+    
     var user = Users()
 
 
@@ -27,7 +28,7 @@ class HomePage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let ageIntFromLabel : Int? = Int(ageLabel.text!)
+        var ageIntFromLabel : Int? = Int(ageLabel.text!)
         ageLabel.keyboardType = UIKeyboardType.NumberPad
         
 
@@ -37,13 +38,14 @@ class HomePage: UIViewController {
         user.address = String(addressLabel)
         user.city = String(cityLabel)
         user.state = String(stateLabel)
-        user.age = ageIntFromLabel!
-        
-        
-
         
         
     }
+    @IBAction func submitButton(sender: AnyObject) {
+        
+        print(user.firstName)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
