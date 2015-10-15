@@ -15,7 +15,7 @@ class Users: NSObject {
     var firstName : String = ""
     var lastName : String = ""
     var address : String = ""
-    var Points : Int = 0
+    var points : Int = 0
     var age : Int = 0
     var city : String = ""
     var state : String = ""

@@ -10,10 +10,12 @@ import UIKit
 
 class Mechanic: NSObject {
 
-    var mechanicLocation : String = ""
-    var mechanicName : String = ""
-    var mechanicStars : Int = 0
-    
+    var address : String = ""
+    var firstName : String = ""
+    var stars : Int = 0
+    var lastName : String = ""
+    var state : String = ""
+    var city : String = ""
     
     
 }

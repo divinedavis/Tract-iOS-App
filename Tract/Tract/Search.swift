@@ -37,6 +37,20 @@ class Search : UIViewController, UITableViewDataSource, UITableViewDelegate {
         return 1
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        [self .performSegueWithIdentifier("shopToShopDetail", sender: self)]
+        
+    }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "shopToShopDetail" {
+//            if let destinationVC = segue.destinationViewController as? MechanicProfileViewController {
+//                
+//            }
+//            
+//        }
+//    }
+    
     
     
 

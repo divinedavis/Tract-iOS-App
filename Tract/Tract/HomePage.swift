@@ -10,47 +10,15 @@ import UIKit
 
 class HomePage: UIViewController {
 
-    @IBOutlet weak var firstNameLabel: UITextField!
-    @IBOutlet weak var lastNameLabel: UITextField!
-    @IBOutlet weak var addressLabel: UITextField!
-    @IBOutlet weak var cityLabel: UITextField!
-    @IBOutlet weak var stateLabel: UITextField!
-    @IBOutlet weak var ageLabel: UITextField!
-    
-    
     var user = Users()
     var car = Car()
+    var mechanic = Mechanic()
     
-    func getCarInfo(year : Int, make : String, model : String, tireSize : Int, color : String, body : String) {
-        
-        
-    }
-    
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        var ageIntFromLabel : Int? = Int(ageLabel.text!)
-        ageLabel.keyboardType = UIKeyboardType.NumberPad
-        
-        
-        user.firstName = String(firstNameLabel)
-        user.lastName = String(lastNameLabel)
-        user.address = String(addressLabel)
-        user.city = String(cityLabel)
-        user.state = String(stateLabel)
-        
-        
-        
+    
     }
-    @IBAction func submitButton(sender: AnyObject) {
-        
-        print(user.firstName)
-        
-        getCarInfo(car.year, make: car.make, model: car.model, tireSize: car.tireSize, color: car.color, body: car.body)
-        
-    }
+    
     
 
     override func didReceiveMemoryWarning() {
