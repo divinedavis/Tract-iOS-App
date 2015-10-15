@@ -116,10 +116,10 @@
 				16F726011BAE1F520043B0FB /* Users.swift */,
 				16F725FE1BAE1EB40043B0FB /* Mechanic.swift */,
 				16F726051BAE1F8A0043B0FB /* Car.swift */,
-				16F725D41BAE19500043B0FB /* Main.storyboard */,
 				16CE3D011BD0627100E14CEA /* RatingControl.swift */,
-				16F725D71BAE19500043B0FB /* Assets.xcassets */,
+				16F725D41BAE19500043B0FB /* Main.storyboard */,
 				16F725D91BAE19500043B0FB /* LaunchScreen.storyboard */,
+				16F725D71BAE19500043B0FB /* Assets.xcassets */,
 				16F725DC1BAE19500043B0FB /* Info.plist */,
 			);
 			path = Tract;

@@ -17,15 +17,6 @@ class Car: NSObject {
     var color : String = ""
     var body : String = ""
     
-    func getCarInfo(year : Int, make : String, model : String, tireSize : Int, color : String, body : String) {
-        
-        
-    }
-    
-    func getCar(){
-        
-    }
-    
     
     
 }
