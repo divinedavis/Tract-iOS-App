@@ -10,8 +10,7 @@ import UIKit
 
 class Users: NSObject {
 
-    
-    
+    var userName : String = ""
     var firstName : String = ""
     var lastName : String = ""
     var address : String = ""
@@ -19,6 +18,7 @@ class Users: NSObject {
     var age : Int = 0
     var city : String = ""
     var state : String = ""
+    var email : String = ""
     
     
     

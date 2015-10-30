@@ -17,7 +17,5 @@ class Car: NSObject {
     var color : String = ""
     var body : String = ""
     
-    
-    
 }
 

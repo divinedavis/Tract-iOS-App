@@ -10,6 +10,7 @@ import UIKit
 
 class Mechanic: NSObject {
 
+    var userName : String = ""
     var address : String = ""
     var firstName : String = ""
     var stars : Int = 0

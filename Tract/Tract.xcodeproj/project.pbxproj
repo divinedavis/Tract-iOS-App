@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16CE3D021BD0627100E14CEA /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE3D011BD0627100E14CEA /* RatingControl.swift */; settings = {ASSET_TAGS = (); }; };
+		16CE3D021BD0627100E14CEA /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE3D011BD0627100E14CEA /* RatingControl.swift */; };
 		16F725CF1BAE19500043B0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725CE1BAE19500043B0FB /* AppDelegate.swift */; };
 		16F725D31BAE19500043B0FB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725D21BAE19500043B0FB /* HomePage.swift */; };
 		16F725D61BAE19500043B0FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F725D41BAE19500043B0FB /* Main.storyboard */; };
@@ -15,9 +15,9 @@
 		16F725DB1BAE19500043B0FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F725D91BAE19500043B0FB /* LaunchScreen.storyboard */; };
 		16F725E61BAE19500043B0FB /* TractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725E51BAE19500043B0FB /* TractTests.swift */; };
 		16F725F11BAE19500043B0FB /* TractUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725F01BAE19500043B0FB /* TractUITests.swift */; };
-		16F725FF1BAE1EB40043B0FB /* Mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725FE1BAE1EB40043B0FB /* Mechanic.swift */; settings = {ASSET_TAGS = (); }; };
-		16F726021BAE1F520043B0FB /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F726011BAE1F520043B0FB /* Users.swift */; settings = {ASSET_TAGS = (); }; };
-		16F726061BAE1F8A0043B0FB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F726051BAE1F8A0043B0FB /* Car.swift */; settings = {ASSET_TAGS = (); }; };
+		16F725FF1BAE1EB40043B0FB /* Mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725FE1BAE1EB40043B0FB /* Mechanic.swift */; };
+		16F726021BAE1F520043B0FB /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F726011BAE1F520043B0FB /* Users.swift */; };
+		16F726061BAE1F8A0043B0FB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F726051BAE1F8A0043B0FB /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,17 +95,10 @@
 			children = (
 				16F726011BAE1F520043B0FB /* Users.swift */,
 				16F725FE1BAE1EB40043B0FB /* Mechanic.swift */,
+				16CE3D011BD0627100E14CEA /* RatingControl.swift */,
 				16F726051BAE1F8A0043B0FB /* Car.swift */,
 			);
 			name = NSObject;
-			sourceTree = "<group>";
-		};
-		16CE3D071BD0745800E14CEA /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				16CE3D011BD0627100E14CEA /* RatingControl.swift */,
-			);
-			name = UIView;
 			sourceTree = "<group>";
 		};
 		16F725C21BAE19500043B0FB = {
@@ -133,7 +126,6 @@
 			children = (
 				16CE3D041BD0742700E14CEA /* UIViewController */,
 				16CE3D061BD0744A00E14CEA /* NSObject */,
-				16CE3D071BD0745800E14CEA /* UIView */,
 				16F725CE1BAE19500043B0FB /* AppDelegate.swift */,
 				16F725D41BAE19500043B0FB /* Main.storyboard */,
 				16F725D91BAE19500043B0FB /* LaunchScreen.storyboard */,
