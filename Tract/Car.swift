@@ -7,6 +7,8 @@
 //
 
 import UIKit
+typealias ServiceResponse = (JSON, NSError?) -> Void
+
 
 class Car: NSObject {
 
@@ -16,6 +18,29 @@ class Car: NSObject {
     var tireSize : Int = 0
     var color : String = ""
     var body : String = ""
+    
+    static let sharedInstance = Car()
+    
+    let baseURL = "http://api.randomuser.me/"
+    
+    func getRandomUser(onCompletion: (JSON) -> Void) {
+        let route = baseURL
+        makeHTTPGetRequest(route, onCompletion: { json, err in
+            onCompletion(json as JSON)
+        })
+    }
+    
+    func makeHTTPGetRequest(path: String, onCompletion: ServiceResponse) {
+        let request = NSMutableURLRequest(URL: NSURL(string: path)!)
+        
+        let session = NSURLSession.sharedSession()
+        
+        let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+            let json:JSON = JSON(data: data)
+            onCompletion(json, error)
+        })
+        task.resume()
+    }
     
 }
 
