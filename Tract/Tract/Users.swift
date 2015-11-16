@@ -20,6 +20,12 @@ class Users: NSObject {
     var state : String = ""
     var email : String = ""
     
+    func fullName (firstName fName : String, lastName lName : String) -> String {
+        var fullName = firstName + " " + lastName
+        
+        return fullName
+    }
+    
     
     
     
