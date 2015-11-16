@@ -20,6 +20,25 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         self.view.endEditing(true)
         
+        if password2TextField.text != passwordTextField.text {
+            
+            var alert = UIAlertController(title: "Mismatch password", message: "Make sure your passwords match", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        if ((emailTextField.text?.isEmpty) != nil) {
+            
+            var alert = UIAlertController(title: "Email", message: "You did not provide a correct email", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -35,6 +54,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             userText.resignFirstResponder()
             return true;
         }
+        
+        
         
         view.resignFirstResponder()
         
