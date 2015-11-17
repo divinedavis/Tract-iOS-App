@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		163682ED1BFB7DF90065C0B1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163682EC1BFB7DF90065C0B1 /* SystemConfiguration.framework */; };
 		163682EF1BFB7E0D0065C0B1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163682EE1BFB7E0D0065C0B1 /* AudioToolbox.framework */; };
-		163682F51BFB80640065C0B1 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163682F41BFB80640065C0B1 /* SearchTableViewCell.swift */; };
 		166F37651BFADF200018D9BD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 166F37641BFADF200018D9BD /* libz.tbd */; };
 		166F37671BFADF2D0018D9BD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 166F37661BFADF2D0018D9BD /* libsqlite3.tbd */; };
 		166F378F1BFAEB5D0018D9BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F378E1BFAEB5D0018D9BD /* AppDelegate.swift */; };
@@ -37,6 +36,10 @@
 		166F37E91BFAF0940018D9BD /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166F37DC1BFAF0940018D9BD /* ParseUI.framework */; };
 		166F37EA1BFAF0940018D9BD /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166F37DC1BFAF0940018D9BD /* ParseUI.framework */; };
 		166F37EB1BFAF0940018D9BD /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166F37DC1BFAF0940018D9BD /* ParseUI.framework */; };
+		16CC3A4C1BFB87E500FE9848 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CC3A4B1BFB87E500FE9848 /* SearchTableViewController.swift */; };
+		16CC3A4E1BFB890700FE9848 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CC3A4D1BFB890700FE9848 /* Ratings.swift */; };
+		16CC3A501BFB896900FE9848 /* MechanicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CC3A4F1BFB896900FE9848 /* MechanicTableViewCell.swift */; };
+		16CC3A541BFB8D5B00FE9848 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CC3A531BFB8D5B00FE9848 /* ProfileViewController.swift */; };
 		16E722831BFA335B00E7803B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E722821BFA335B00E7803B /* SignUpViewController.swift */; };
 		16F725D61BAE19500043B0FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F725D41BAE19500043B0FB /* Main.storyboard */; };
 		16F725D81BAE19500043B0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F725D71BAE19500043B0FB /* Assets.xcassets */; };
@@ -67,7 +70,6 @@
 /* Begin PBXFileReference section */
 		163682EC1BFB7DF90065C0B1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		163682EE1BFB7E0D0065C0B1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		163682F41BFB80640065C0B1 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewCell.swift; path = ../SearchTableViewCell.swift; sourceTree = "<group>"; };
 		166F37641BFADF200018D9BD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		166F37661BFADF2D0018D9BD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		166F378E1BFAEB5D0018D9BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,10 @@
 		166F37DA1BFAF0940018D9BD /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "parse-library-1/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
 		166F37DB1BFAF0940018D9BD /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = "parse-library-1/ParseTwitterUtils.framework"; sourceTree = "<group>"; };
 		166F37DC1BFAF0940018D9BD /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "parse-library-1/ParseUI.framework"; sourceTree = "<group>"; };
+		16CC3A4B1BFB87E500FE9848 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewController.swift; path = ../SearchTableViewController.swift; sourceTree = "<group>"; };
+		16CC3A4D1BFB890700FE9848 /* Ratings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		16CC3A4F1BFB896900FE9848 /* MechanicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MechanicTableViewCell.swift; path = ../MechanicTableViewCell.swift; sourceTree = "<group>"; };
+		16CC3A531BFB8D5B00FE9848 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		16E722821BFA335B00E7803B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		16F725CB1BAE19500043B0FB /* Tract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tract.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F725D51BAE19500043B0FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,16 +151,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		166F374F1BFADDA20018D9BD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		16F725C21BAE19500043B0FB = {
 			isa = PBXGroup;
 			children = (
+				16CC3A531BFB8D5B00FE9848 /* ProfileViewController.swift */,
 				166F37CD1BFAF0610018D9BD /* Parse.framework */,
 				166F37CC1BFAF0610018D9BD /* Bolts.framework */,
 				163682EE1BFB7E0D0065C0B1 /* AudioToolbox.framework */,
@@ -171,7 +171,6 @@
 				16F725EF1BAE19500043B0FB /* TractUITests */,
 				16F725CC1BAE19500043B0FB /* Products */,
 				16F725DC1BAE19500043B0FB /* Info.plist */,
-				166F374F1BFADDA20018D9BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,12 +187,14 @@
 		16F725CD1BAE19500043B0FB /* Tract */ = {
 			isa = PBXGroup;
 			children = (
+				166F378E1BFAEB5D0018D9BD /* AppDelegate.swift */,
 				166F37D41BFAF0860018D9BD /* Car.swift */,
 				16F726011BAE1F520043B0FB /* Users.swift */,
 				16F725FE1BAE1EB40043B0FB /* Mechanic.swift */,
-				166F378E1BFAEB5D0018D9BD /* AppDelegate.swift */,
+				16CC3A4D1BFB890700FE9848 /* Ratings.swift */,
+				16CC3A4F1BFB896900FE9848 /* MechanicTableViewCell.swift */,
 				16E722821BFA335B00E7803B /* SignUpViewController.swift */,
-				163682F41BFB80640065C0B1 /* SearchTableViewCell.swift */,
+				16CC3A4B1BFB87E500FE9848 /* SearchTableViewController.swift */,
 				16F725D71BAE19500043B0FB /* Assets.xcassets */,
 				16F725D41BAE19500043B0FB /* Main.storyboard */,
 				16F725D91BAE19500043B0FB /* LaunchScreen.storyboard */,
@@ -350,11 +351,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				166F378F1BFAEB5D0018D9BD /* AppDelegate.swift in Sources */,
+				16CC3A501BFB896900FE9848 /* MechanicTableViewCell.swift in Sources */,
+				16CC3A4C1BFB87E500FE9848 /* SearchTableViewController.swift in Sources */,
 				166F37D51BFAF0860018D9BD /* Car.swift in Sources */,
 				16E722831BFA335B00E7803B /* SignUpViewController.swift in Sources */,
-				163682F51BFB80640065C0B1 /* SearchTableViewCell.swift in Sources */,
 				16F725FF1BAE1EB40043B0FB /* Mechanic.swift in Sources */,
+				16CC3A541BFB8D5B00FE9848 /* ProfileViewController.swift in Sources */,
 				16F726021BAE1F520043B0FB /* Users.swift in Sources */,
+				16CC3A4E1BFB890700FE9848 /* Ratings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  SearchTableViewCell.swift
+//  MechanicTableViewCell.swift
 //  Tract
 //
 //  Created by Divine Davis on 11/17/15.
@@ -8,8 +8,15 @@
 
 import UIKit
 
-class SearchTableViewCell: UITableViewCell {
+class MechanicTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var photoImageView: UIImageView!
+    
+    @IBOutlet weak var ratingsControl: Ratings!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +27,4 @@ class SearchTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
