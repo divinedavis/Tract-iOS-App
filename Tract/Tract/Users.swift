@@ -21,10 +21,21 @@ class Users: NSObject {
     var email : String = ""
     
     func fullName (firstName fName : String, lastName lName : String) -> String {
+        
         var fullName = firstName + " " + lastName
         
         return fullName
     }
+    
+    /* func fullAddress(houseNumber number : Int, streetName street : String, cityName city : String, stateName state : String) -> (number : Int, streetName : String, city : String, state : String) {
+        
+        var address = (number, street, city, state)
+        
+        
+        
+        return (number, street, city, state)
+
+    } */
     
     
     

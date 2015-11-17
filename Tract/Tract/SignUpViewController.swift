@@ -22,22 +22,40 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
    
     @IBOutlet weak var signInSignUpButton: UIButton!
     
-    var signupActive : Bool = true
+    var signupActive = true
+    
+    var forgotPasswordActive = true
 
     @IBOutlet weak var toggleSignUp: UIButton!
     
     @IBAction func forgotPasswordButton(sender: AnyObject) {
         
+        if forgotPasswordActive == true {
+            
         passwordTextField.hidden = true
+        
         password2TextField.hidden = true
+        
         signInSignUpButton.setTitle("Send new password", forState: UIControlState.Normal)
-        toggleSignUp.hidden = true
+        
+        toggleSignUp.setTitle("Go back", forState: UIControlState.Normal)
+        } else {
+            
+            passwordTextField.hidden = false
+            
+            password2TextField.hidden = false
+            
+            signInSignUpButton.setTitle("Sign up", forState: UIControlState.Normal)
+            
+            toggleSignUp.setTitle("Sign in", forState: UIControlState.Normal)
+        }
+        
     }
     @IBAction func signInSignUpButton(sender: AnyObject) {
         
         if password2TextField.text != passwordTextField.text {
             
-            var alert = UIAlertController(title: "Mismatch password", message: "Make sure your passwords match", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Mismatch Password", message: "Make sure your passwords match", preferredStyle: UIAlertControllerStyle.Alert)
             
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             
@@ -52,10 +70,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             
             self.presentViewController(alert, animated: true, completion: nil)
     }
-        func textFieldShouldReturn(userText: UITextField!) -> Bool {
-            userText.resignFirstResponder()
-            return true;
-        }
+        
     }
     
 
@@ -68,12 +83,15 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             detailLabel.text = "Sign up below"
             signInSignUpButton.setTitle("Log in", forState: UIControlState.Normal)
             
-            forgotPasswordLabel.text = "Already a member?"
+            forgotPasswordLabel.text = "Forgot password?"
+            
             signInSignUpButton.setTitle("Sign up", forState: UIControlState.Normal)
             
             toggleSignUp.setTitle("Log in", forState: UIControlState.Normal)
             
             password2TextField.hidden = false
+            
+            passwordTextField.hidden = false
             
             print("Sign up view")
             
@@ -82,11 +100,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             signupActive = true
             
             detailLabel.text = "Sign in below"
+            
             signInSignUpButton.setTitle("Sign up", forState: UIControlState.Normal)
             
-            forgotPasswordLabel.text = "Not a member?"
+            forgotPasswordLabel.text = "Forgot password?"
             
             toggleSignUp.setTitle("Sign up", forState: UIControlState.Normal)
+            
             signInSignUpButton.setTitle("Sign me In!", forState: UIControlState.Normal)
             
             password2TextField.hidden = true
@@ -96,18 +116,41 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidLoad() {
-        
-        self.view.endEditing(true)
-        
         super.viewDidLoad()
         
+        /* emailTextField.becomeFirstResponder()
+        
         self.emailTextField.delegate = self
+        
+        textFieldShouldReturn(emailTextField) */
+        
+    }
+    
+    // makes the keyboard go away when you touch outside of the text fields
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        
+        view.endEditing(true)
+        
+        super.touchesBegan(touches, withEvent: event)
     }
 
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        goToPasswordOne()
+        
+    
+        return true
+    }
+    
+    func goToPasswordOne() {
+        
+        passwordTextField.becomeFirstResponder()
     }
     
 

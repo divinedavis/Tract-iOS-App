@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16CE3D021BD0627100E14CEA /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE3D011BD0627100E14CEA /* RatingControl.swift */; };
+		166F374E1BFAD7100018D9BD /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F374D1BFAD7100018D9BD /* HomeTableViewController.swift */; };
 		16E722831BFA335B00E7803B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E722821BFA335B00E7803B /* SignUpViewController.swift */; };
 		16F725CF1BAE19500043B0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725CE1BAE19500043B0FB /* AppDelegate.swift */; };
-		16F725D31BAE19500043B0FB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F725D21BAE19500043B0FB /* HomePage.swift */; };
 		16F725D61BAE19500043B0FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F725D41BAE19500043B0FB /* Main.storyboard */; };
 		16F725D81BAE19500043B0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F725D71BAE19500043B0FB /* Assets.xcassets */; };
 		16F725DB1BAE19500043B0FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F725D91BAE19500043B0FB /* LaunchScreen.storyboard */; };
@@ -39,11 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16CE3D011BD0627100E14CEA /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		166F374D1BFAD7100018D9BD /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		16E722821BFA335B00E7803B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		16F725CB1BAE19500043B0FB /* Tract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tract.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F725CE1BAE19500043B0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16F725D21BAE19500043B0FB /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		16F725D51BAE19500043B0FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16F725D71BAE19500043B0FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16F725DA1BAE19500043B0FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,11 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				16F726011BAE1F520043B0FB /* Users.swift */,
-				16CE3D011BD0627100E14CEA /* RatingControl.swift */,
 				16F725FE1BAE1EB40043B0FB /* Mechanic.swift */,
 				16F726051BAE1F8A0043B0FB /* Car.swift */,
-				16F725D21BAE19500043B0FB /* HomePage.swift */,
 				16E722821BFA335B00E7803B /* SignUpViewController.swift */,
+				166F374D1BFAD7100018D9BD /* HomeTableViewController.swift */,
 				16F725CE1BAE19500043B0FB /* AppDelegate.swift */,
 				16F725D71BAE19500043B0FB /* Assets.xcassets */,
 				16F725D41BAE19500043B0FB /* Main.storyboard */,
@@ -270,11 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16F725D31BAE19500043B0FB /* HomePage.swift in Sources */,
+				166F374E1BFAD7100018D9BD /* HomeTableViewController.swift in Sources */,
 				16E722831BFA335B00E7803B /* SignUpViewController.swift in Sources */,
 				16F725FF1BAE1EB40043B0FB /* Mechanic.swift in Sources */,
 				16F726021BAE1F520043B0FB /* Users.swift in Sources */,
-				16CE3D021BD0627100E14CEA /* RatingControl.swift in Sources */,
 				16F725CF1BAE19500043B0FB /* AppDelegate.swift in Sources */,
 				16F726061BAE1F8A0043B0FB /* Car.swift in Sources */,
 			);
