@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import Parse
 
 class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate {
     
@@ -76,7 +75,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
             
             self.presentViewController(alert, animated: true, completion: nil)
     }
-        var error = ""
+       /* var error = ""
         
         /* if emailTextField.text == "" || passwordTextField.text == "" {
             
@@ -186,7 +185,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     
     }
     
-
+*/
+    }
     @IBAction func toggleSignInSignUpButton(sender: AnyObject) {
         
         if signupActive == true {
@@ -230,10 +230,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     
     override func viewDidLoad() {
         
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
+//        let testObject = PFObject(className: "TestObject")
+//        testObject["foo"] = "bar"
+//        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+//            println("Object has been saved.")
         }
         
         /* emailTextField.becomeFirstResponder()
@@ -242,16 +242,14 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         
         textFieldShouldReturn(emailTextField) */
         
-    }
-    
     override func viewDidAppear(animated: Bool) {
         
-        //If the currentUser is signed in already
-        if PFUser.currentUser() != nil {
-            
-            //Use this segue if the currentUser is logged in
+//        //If the currentUser is signed in already
+//        if PFUser.currentUser() != nil {
+//            
+//            //Use this segue if the currentUser is logged in
             self.performSegueWithIdentifier("goToTabView", sender: self)
-        }
+        
     }
     
     // makes the keyboard go away when you touch outside of the text fields
@@ -291,7 +289,4 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         // Pass the selected object to the new view controller.
     }
     */
-    
-   
-
-
+}

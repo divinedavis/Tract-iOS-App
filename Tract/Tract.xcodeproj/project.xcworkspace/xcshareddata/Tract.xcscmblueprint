@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "93C3024DB3A242DE5B587CD6F379767C74A509E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "93C3024DB3A242DE5B587CD6F379767C74A509E0" : 0,
+    "491C0B18D4248BA060ABD0CD83D3F9167E8F712A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5805B2AD-5431-4821-AC0B-4CD0B870B64B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "93C3024DB3A242DE5B587CD6F379767C74A509E0" : "Tract-iOS-App\/",
+    "491C0B18D4248BA060ABD0CD83D3F9167E8F712A" : "Crib-iOS-App\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Tract",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tract\/Tract.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/divinedavis\/Crib-iOS-App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "491C0B18D4248BA060ABD0CD83D3F9167E8F712A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/divinedavis\/Tract-iOS-App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93C3024DB3A242DE5B587CD6F379767C74A509E0"
+    }
+  ]
+}

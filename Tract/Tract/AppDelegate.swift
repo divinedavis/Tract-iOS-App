@@ -6,7 +6,9 @@
 //  Copyright © 2015 Juniper Street. All rights reserved.
 //
 
+
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        Parse.enableLocalDatastore()
+        
+        Parse.setApplicationId("MHKrEh0zepxIqVqTyAwdr2oyMC7G7L0zsNKHIqRG",
+            clientKey: "kq5fOgv9eIvk6F5Ic2s3J6mZDPBcpgikQ4GPUAFV")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         // Override point for customization after application launch.
         return true
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
