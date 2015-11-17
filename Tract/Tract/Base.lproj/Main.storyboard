@@ -49,13 +49,35 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj0-fG-ybN">
-                                <rect key="frame" x="133" y="317" width="110" height="36"/>
+                                <rect key="frame" x="37" y="317" width="300" height="36"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign Me Up!"/>
                                 <connections>
-                                    <action selector="signInSignUpButton:" destination="pIM-sF-OTX" eventType="touchUpInside" id="H9X-5b-YVU"/>
+                                    <action selector="signInSignUpButton:" destination="pIM-sF-OTX" eventType="touchUpInside" id="az2-um-jCD"/>
                                     <action selector="signInSignUpButton:" destination="8Bt-CF-WT9" eventType="editingDidEnd" id="c8j-kL-Uwa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXy-Wz-D6g">
+                                <rect key="frame" x="228" y="357" width="66" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="toggleSignInSignUpButton:" destination="pIM-sF-OTX" eventType="touchUpInside" id="Z2o-zT-vQA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qid-Ag-9xy">
+                                <rect key="frame" x="37" y="361" width="173" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWV-2c-O6p">
+                                <rect key="frame" x="37" y="362" width="173" height="20"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="forgotPasswordButton:" destination="pIM-sF-OTX" eventType="touchUpInside" id="WTv-ZR-M7d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,9 +86,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="detailLabel" destination="JEt-qj-vmi" id="LhB-BZ-Zac"/>
                         <outlet property="emailTextField" destination="ecl-rZ-B0F" id="cPG-9m-VGm"/>
+                        <outlet property="forgotPasswordLabel" destination="Qid-Ag-9xy" id="6aA-UD-agD"/>
                         <outlet property="password2TextField" destination="4PI-HF-TrF" id="wOK-ec-wgq"/>
                         <outlet property="passwordTextField" destination="0II-YD-9Iu" id="ikH-DK-UyH"/>
+                        <outlet property="signInSignUpButton" destination="Xj0-fG-ybN" id="vly-Il-PFL"/>
+                        <outlet property="toggleSignUp" destination="CXy-Wz-D6g" id="tHf-9q-ac8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Bt-CF-WT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
