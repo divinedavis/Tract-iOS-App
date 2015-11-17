@@ -56,7 +56,7 @@
                                 <connections>
                                     <action selector="signInSignUpButton:" destination="pIM-sF-OTX" eventType="touchUpInside" id="az2-um-jCD"/>
                                     <action selector="signInSignUpButton:" destination="8Bt-CF-WT9" eventType="editingDidEnd" id="c8j-kL-Uwa"/>
-                                    <segue destination="PAK-12-Fm1" kind="presentation" identifier="toTabView" modalTransitionStyle="crossDissolve" id="RAP-z9-IHI"/>
+                                    <segue destination="PAK-12-Fm1" kind="presentation" identifier="goToTabView" modalTransitionStyle="crossDissolve" id="RAP-z9-IHI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXy-Wz-D6g">
