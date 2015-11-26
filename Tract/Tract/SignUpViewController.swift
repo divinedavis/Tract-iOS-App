@@ -253,12 +253,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     }
     
     // makes the keyboard go away when you touch outside of the text fields
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
-        
-        view.endEditing(true)
-        
-        touchesBegan(touches, withEvent: event)
-    }
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+//        
+//        view.endEditing(true)
+//        
+//        touchesBegan(touches, withEvent: event)
+//    }
 
     override func didReceiveMemoryWarning() {
         
